@@ -1,0 +1,67 @@
+package recursividad;
+
+public class Recursividad {
+
+	public static void main(String[] args) {
+		
+		int n = 5;
+		imprimirMatruskaRecursivo(n);
+	}
+	private static void imprimirMatruskaRecursivo(int i) {
+		// valorincial 
+		// condicion de parada
+		// incremento
+		// ciclo
+		
+		if(i == 1) {// caso base explicito
+			System.out.println("Abriendo "+ i);
+			System.out.println("cerrando "+ i);
+		}else {
+			System.out.println("Abriendo matruska "+ i);
+			imprimirMatruskaRecursivo(i-1);
+			
+		}
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	private static void imprimirMatruskaIterativa(int n) {
+		
+		for (int i = n; i >= 1; i--) {
+			System.out.println("Abriendo matruska :"+i);
+		}
+		
+		
+		
+		
+		
+		for (int i = 1; i <= n ; i++) {
+			System.out.println("Cerrando matruska :"+i);
+		}
+		
+		// valorincial i
+		// condicion de parada i <= n
+		// incremento i++
+		// ciclo for
+		
+	}
+}

@@ -1,0 +1,21 @@
+package recursividad;
+
+public class Recursividad {
+
+	public static void main(String[] args) {
+		
+		int n = 5;
+		imprimirMatruskaIterativa(n);
+	}
+
+	private static void imprimirMatruskaIterativa(int n) {
+		
+		for (int i = n; i >= 1; i--) {
+			System.out.println("Abriendo matruska :"+i);
+		}
+		for (int i = 1; i <= n ; i++) {
+			System.out.println("Cerrando matruska :"+i);
+		}
+		
+	}
+}
