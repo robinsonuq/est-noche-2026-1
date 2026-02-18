@@ -1,3 +1,4 @@
 INDEX VERSION 1.132+D:\1. Academia\5. Semestre 2026-1\1. estructuras noche\ws\est-noche-2026-1\.metadata\.plugins\org.eclipse.jdt.core
 485605953.index
 1865797976.index
+1596501301.index
