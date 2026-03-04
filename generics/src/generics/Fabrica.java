@@ -1,5 +1,7 @@
 package generics;
 
+import java.util.Iterator;
+
 public class Fabrica {
 
 	public static void main(String[] args) {
@@ -16,10 +18,7 @@ public class Fabrica {
 		System.out.println(descargar3);
 		System.out.println(descargar);
 		
-		for(String t : camion1 ) {
-			
-		}
-		
+		Iterator<String> iterator = camion1.iterator();
 		
 	}
 }
