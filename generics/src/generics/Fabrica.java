@@ -6,7 +6,7 @@ public class Fabrica {
 
 	public static void main(String[] args) {
 		
-		Camion<String> camion1 = new Camion<>();
+		Camion<Manzana> camion1 = new Camion<>();
 		
 		camion1.cargar("manzana");
 		camion1.cargar("pera");
@@ -20,5 +20,8 @@ public class Fabrica {
 		
 		Iterator<String> iterator = camion1.iterator();
 		
+		while(iterator.hasNext()) {
+			String next = iterator.next();
+		}
 	}
 }

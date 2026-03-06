@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Camion<T> implements Iterable<T>{
+public class Camion<T extends Pesable> implements Iterable<T>{
 
 	List<T> lista = new ArrayList<>();
 	
@@ -23,9 +23,18 @@ public class Camion<T> implements Iterable<T>{
 		lista.remove(lista.size()-1);
 		return t;
 	}
+	
+	public double calcularCarga(List<? extends Fruta> lista) {
+		double suma = 0;
+		for (Fruta fruta : lista) {
+			suma += fruta.getPeso();
+		}
+		return suma;
+	}
+	
 
 	@Override
 	public Iterator<T> iterator() {
-		return lista.iterator();
+		return new IteratorPropio(lista);
 	}
 }
