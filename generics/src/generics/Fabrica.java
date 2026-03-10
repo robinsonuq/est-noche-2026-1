@@ -8,20 +8,20 @@ public class Fabrica {
 		
 		Camion<Manzana> camion1 = new Camion<>();
 		
-		camion1.cargar("manzana");
-		camion1.cargar("pera");
+		camion1.cargar(new Manzana());
+		camion1.cargar(new Manzana());
 		
-		String descargar = camion1.descargar();
-		String descargar2 = camion1.descargar();
-		String descargar3 = camion1.descargar();
+		Manzana descargar = camion1.descargar();
+		Manzana descargar2 = camion1.descargar();
+		Manzana descargar3 = camion1.descargar();
 		
 		System.out.println(descargar3);
 		System.out.println(descargar);
 		
-		Iterator<String> iterator = camion1.iterator();
+		Iterator<Manzana> iterator = camion1.iterator();
 		
 		while(iterator.hasNext()) {
-			String next = iterator.next();
+			Manzana next = iterator.next();
 		}
 	}
 }
