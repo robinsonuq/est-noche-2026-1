@@ -2,7 +2,7 @@ package listas.listasimple;
 
 import java.util.Iterator;
 
-public class SinglyLinkedListIterator<T> implements Iterator<T> {
+public class SinglyLinkedListIterator<T> implements Iterator<Node<T>> {
 
 	Node<T> aux;
 	
@@ -16,7 +16,7 @@ public class SinglyLinkedListIterator<T> implements Iterator<T> {
 	}
 
 	@Override
-	public T next() {
+	public Node<T> next() {
 		// TODO Auto-generated method stub
 		return aux.getNext();
 	}
