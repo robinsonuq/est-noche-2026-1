@@ -20,6 +20,22 @@ public class SinglyLinkedList<T> implements Iterable<T>{
 		size++;
 	}
 
+	
+	public void invertir() {
+		invertir(first, null);
+	}
+	public void invertir(Node<T> node, Node<T> previous) {
+		if(node != null) {
+			invertir(node.getNext(), node);
+			node.setNext(previous);
+		}else {
+			first = previous;
+		}
+	}
+	
+	
+	
+	
 	// Insert at the end
 	public void insertAtEnd(T data) {
 		Node<T> newNode = new Node(data);
